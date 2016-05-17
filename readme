@@ -1,0 +1,5 @@
+Here I will share some useful tricks to use caffe:
+
+
+'VGG/VGG_ILSVRC_19_layers_train_val.prototxt' contains the VGG definition. Usage (from terminal):
+	caffe train -solver solver.prototxt -weights VGG_ILSVRC_19_layers.caffemodel > VGG_log_29-04-2016.txt

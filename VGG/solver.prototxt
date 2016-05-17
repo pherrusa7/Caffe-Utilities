@@ -1,0 +1,16 @@
+net: "models/foodCAT_VGG_ILSVRC_19_layers/VGG_ILSVRC_19_layers_train_val.prototxt"
+test_iter: 915
+test_interval: 1000
+# lr for fine-tuning should be lower than when starting from scratch
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+# decrease lr each 20000 iterations
+stepsize: 20000
+display: 20
+max_iter: 600000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "models/foodCAT_VGG_ILSVRC_19_layers/snapshots/ss_foodCAT_VGG_ILSVRC_19_layers_train"
+solver_mode: GPU
